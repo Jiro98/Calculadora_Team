@@ -1,36 +1,42 @@
-# Calculadora_Team
-Este es un proyecto de una calculadora que se realizara para la materia de Diseño de dispositivos mecatrónicos.  
-/********************* Calculadora ******************/
-#include<stdio.h>
-#include<conio.h>
-#include<math.h>
+Calculadora_Team
+Este es un proyecto de una calculadora que se realizara para la materia de tecnologías de diseño mecatrónico.
+
+	
+	#include<stdio.h>
+	#include<conio.h>
+	#include<math.h>
  
-main()
-{
-	int resultado; /* Variable reservada para cada resultado de las operaciones */
-	int a;         /* Primer numero que introducimos */
-	int b;         /* Segundo numero que introducimos */
-	int opcion;    /* Opcion que elegimos */
-	do
+
+	main()
 	{
-		clrscr();
-		printf("\n         ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»");
-		printf("\n         º               :: C A L C U L A D O R A ::                 º");
-		printf("\n         ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹");
-		printf("\n         º                                                           º");
-		printf("\n         º       1.- Suma                     4.- Multiplicacion     º");
-		printf("\n         º                                                           º");
-		printf("\n         º       2.- Resta                    5.- Division           º");
-		printf("\n         º                                                           º");
-		printf("\n         º       3.- Raiz Cuadrada            6.- Potencia           º");
-		printf("\n         º                                                           º");
-		printf("\n         º                        7.- Salir                          º");
-		printf("\n         ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼");
-		printf("\n                     Nota: Solo funciona con numeros enteros");
-		printf("\n");
-		printf("\n                              Elija una opcion: ");
+
+		int resultado; /* Variable reservada para cada resultado de las operaciones */
+		int a;         /* Primer numero que introducimos */
+		int b;         /* Segundo numero que introducimos */
+		int opcion;    /* Opcion que elegimos */
+		do
+			{
+		
+				clrscr();
+				printf("\n         ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»");
+				printf("\n         º               :: C A L C U L A D O R A ::                 º");
+				printf("\n         ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹");
+				printf("\n         º                                                           º");
+				printf("\n         º       1.- Suma                     4.- Multiplicacion     º");
+				printf("\n         º                                                           º");
+				printf("\n         º       2.- Resta                    5.- Division           º");
+				printf("\n         º                                                           º");
+				printf("\n         º       3.- Raiz Cuadrada            6.- Potencia           º");
+				printf("\n         º                                                           º");
+				printf("\n         º                        7.- Salir                          º");
+				printf("\n         ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼");
+				printf("\n                     Nota: Solo funciona con numeros enteros");
+				printf("\n");
+				printf("\n                              Elija una opcion: ");
+		
 		scanf("%d",&opcion);
-		switch(opcion)  /* Segun la opcion elegida tendremos los siguientes casos...*/
+		
+		switch(opcion)  /* Segun la opcion elegida tendremos los siguientes casos... */
 		{
 			case 1:     /* Suma */
 			printf("\n         -> Introduzca el primer sumando: ");
