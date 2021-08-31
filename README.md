@@ -66,3 +66,52 @@ Este es un proyecto de una calculadora que se realizara para la materia de tecno
 			else printf("\n         No puede hacer la raiz cuadrada de un numero negativo!!");
 			break;
 			
+			case 4:     /* Multiplicacion */
+			printf("\n         -> Introduzca el primer multiplicando: ");
+			scanf("%i",&a);
+			printf("\n         -> Introduzca el segundo multiplicando: ");
+			scanf("%i",&b);
+			resultado=a*b;
+			printf("\n         La MULTIPLICACION de %i * %i es igual a %i",a,b,resultado);
+			break;
+ 
+			case 5:     /* Division */
+			printf("\n         -> Introduzca el dividendo: ");
+			scanf("%i",&a);
+			printf("\n         -> Introduzca el divisor: ");
+			scanf("%i",&b);
+			if (b!=0)  /* Si el divisor es distinto de 0 realizara la operacion */
+			{
+				resultado=a/b;
+				printf("\n         El cociente de la DIVISION de %i entre %i es igual a %i",a,b,resultado);
+			}
+			else printf("\n         No se puede realizar esa division porque el divisor es 0!!");  /* Si el divisor es igual a 0 muestra este mensaje de error */
+			break;
+ 
+			case 6:
+			printf("\n         -> Introduzca el numero que hara de base: ");  /* Introducimos los datos */
+			scanf("%i",&a);
+			printf("\n         -> Introduzca el exponente: ");
+			scanf("%i",&b);
+			if (b<0) /* Si el exponente es negativo salda un mensaje de error */
+			printf("\n         Solo se admiten exponentes positivos");
+			else   /* De lo contrario calculara la potencia */
+			{
+				resultado=pow(a,b);
+				printf("\n         El resultado de %i^%i es %i",a,b,resultado);
+			}
+			break;
+ 
+			case 7:   /* Salir */
+			textcolor(705);
+			cprintf("\n                            Pulse ENTER para salir...");
+			break;
+		
+			} /* fin switch */
+			getch();
+			} /* fin do */
+			while (opcion!=7);
+			}  
+	
+			/* fin main */
+			
